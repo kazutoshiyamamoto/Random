@@ -35,12 +35,12 @@ class ViewController: UIViewController {
         randomNum = UInt32(arc4random_uniform(10) + 1)
         print(randomNum)
 
-//        // タップした回数とランダムに算出した数字が同じなら0をcountLabelに表示
-//        if countNum == randomNum {
-//            countNum = 0
-//            countLabel.text = String(countNum)
-//        }
-//    }
+        // タップした回数とランダムに算出した数字が同じなら0をcountLabelに表示
+        if countNum == randomNum {
+            countNum = 0
+            countLabel.text = String(countNum)
+        }
+    }
     
     @IBAction func canselButton(_ sender: Any) {
         countNum = 0
