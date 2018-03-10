@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // 数値をランダムに算出
+    let randomNum = UInt32(arc4random_uniform(10) + 1)
+
 
     @IBOutlet weak var countLabel: UILabel!
     var countNum = 1
@@ -29,11 +31,6 @@ class ViewController: UIViewController {
         // タップした回数をカウント
         countLabel.text = String(countNum)
         countNum += 1
-        
-        // 数値をランダムに算出
-        var randomNum: UInt32 = 0
-        randomNum = UInt32(arc4random_uniform(10) + 1)
-        print(randomNum)
 
         // タップした回数とランダムに算出した数字が同じなら0をcountLabelに表示
         if countNum == randomNum {
@@ -41,10 +38,11 @@ class ViewController: UIViewController {
             countLabel.text = String(countNum)
         }
     }
-    
+
     @IBAction func canselButton(_ sender: Any) {
         countNum = 0
         countLabel.text = String(countNum)
     }
 }
+
 
