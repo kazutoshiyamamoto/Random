@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapButtonOutlet: UIButton!
     
     // 数値をランダムに算出
-    var randomNum = UInt32(arc4random_uniform(10))
+    var randomNum = UInt32(arc4random_uniform(40)) + 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +37,11 @@ class ViewController: UIViewController {
         randomNum -= 1
         myLabel.text = "残り\(randomNum)回タップしてください"
         
-        // 残り回数が0ならメッセージをcountLabelに表示しタップボタン無効化
+        // 残り回数が0ならメッセージをcountLabelに表示
         if randomNum == 0 {
             myLabel.text = "完了です！"
-            tapButtonOutlet.isEnabled = false
+        // タップボタン無効化
+        tapButtonOutlet.isEnabled = false
         }
     }
 }
