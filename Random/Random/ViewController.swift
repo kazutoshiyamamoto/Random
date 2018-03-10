@@ -10,38 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // ラベルのプロパティ宣言
+    @IBOutlet weak var myLabel: UILabel!
+    // タップボタンのプロパティ宣言
+    @IBOutlet weak var tapButtonOutlet: UIButton!
+    
+    // 数値をランダムに算出
+    var randomNum = UInt32(arc4random_uniform(10))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // 残りタップ回数の表示
+        myLabel.text = "残り\(randomNum)回タップしてください"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    // 数値をランダムに算出
-    let randomNum = UInt32(arc4random_uniform(10) + 1)
-
-
-    @IBOutlet weak var countLabel: UILabel!
-    var countNum = 1
 
     @IBAction func tapButton(_ sender: Any) {
-        // タップした回数をカウント
-        countLabel.text = String(countNum)
-        countNum += 1
-
-        // タップした回数とランダムに算出した数字が同じなら0をcountLabelに表示
-        if countNum == randomNum {
-            countNum = 0
-            countLabel.text = String(countNum)
+        // 残り回数の表示
+        randomNum -= 1
+        myLabel.text = "残り\(randomNum)回タップしてください"
+        
+        // 残り回数が0ならメッセージをcountLabelに表示しタップボタン無効化
+        if randomNum == 0 {
+            myLabel.text = "完了です！"
+            tapButtonOutlet.isEnabled = false
         }
-    }
-
-    @IBAction func canselButton(_ sender: Any) {
-        countNum = 0
-        countLabel.text = String(countNum)
     }
 }
 
