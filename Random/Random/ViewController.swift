@@ -30,11 +30,11 @@ class ViewController: UIViewController {
         countLabel.text = String(countNum)
         countNum += 1
         
-//        // 数値をランダムに算出
-//        var randomNum: UInt32 = 0
-//        randomNum = UInt32(arc4random_uniform(10) + 1)
-//        print(randomNum)
-//
+        // 数値をランダムに算出
+        var randomNum: UInt32 = 0
+        randomNum = UInt32(arc4random_uniform(10) + 1)
+        print(randomNum)
+
 //        // タップした回数とランダムに算出した数字が同じなら0をcountLabelに表示
 //        if countNum == randomNum {
 //            countNum = 0
