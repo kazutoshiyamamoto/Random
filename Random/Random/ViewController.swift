@@ -42,6 +42,14 @@ class ViewController: UIViewController {
             myLabel.text = "完了です！"
         // タップボタン無効化
         tapButtonOutlet.isEnabled = false
+            
+        // ページ移動のテスト
+        // 移動先のビューコントローラを参照する
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "testPage")
+        // トランジションの映像効果を指定する
+        nextVC?.modalTransitionStyle = .coverVertical
+        // シーンを移動する
+        present(nextVC!, animated: true, completion: nil)
         }
     }
 }
