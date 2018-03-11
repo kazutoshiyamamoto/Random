@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
         // 残り回数が0ならメッセージをcountLabelに表示
         if randomNum == 0 {
-            myLabel.text = "完了です！"
+        myLabel.text = "完了です！"
         // タップボタン無効化
         tapButtonOutlet.isEnabled = false
             
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         // 移動先のビューコントローラを参照する
         let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "testPage")
         // トランジションの映像効果を指定する
-        nextVC?.modalTransitionStyle = .coverVertical
+        nextVC?.modalTransitionStyle = .flipHorizontal
         // シーンを移動する
         present(nextVC!, animated: true, completion: nil)
         }
