@@ -12,6 +12,7 @@
 		FD0E55CD2053920B0067549C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0E55CB2053920B0067549C /* Main.storyboard */; };
 		FD0E55CF2053920B0067549C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0E55CE2053920B0067549C /* Assets.xcassets */; };
 		FD0E55D22053920B0067549C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0E55D02053920B0067549C /* LaunchScreen.storyboard */; };
+		FDF9D22620557BB7004168B1 /* testPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF9D22520557BB7004168B1 /* testPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD0E55CE2053920B0067549C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0E55D12053920B0067549C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0E55D32053920B0067549C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF9D22520557BB7004168B1 /* testPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FD0E55C72053920B0067549C /* AppDelegate.swift */,
 				FD0E55C92053920B0067549C /* ViewController.swift */,
+				FDF9D22520557BB7004168B1 /* testPageViewController.swift */,
 				FD0E55CB2053920B0067549C /* Main.storyboard */,
 				FD0E55CE2053920B0067549C /* Assets.xcassets */,
 				FD0E55D02053920B0067549C /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0E55CA2053920B0067549C /* ViewController.swift in Sources */,
+				FDF9D22620557BB7004168B1 /* testPageViewController.swift in Sources */,
 				FD0E55C82053920B0067549C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

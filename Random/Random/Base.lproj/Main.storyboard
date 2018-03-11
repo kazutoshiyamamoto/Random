@@ -53,10 +53,20 @@
         <!--testPage-->
         <scene sceneID="u4F-Me-Msr">
             <objects>
-                <viewController title="testPage" id="rhA-Hf-Vfj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="testPage" title="testPage" id="rhA-Hf-Vfj" customClass="testPageViewController" customModule="Random" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wiI-KU-ZeW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwq-yn-RD5">
+                                <rect key="frame" x="155" y="258" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backToHome:" destination="rhA-Hf-Vfj" eventType="touchUpInside" id="Rus-Ee-66j"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Vpl-WY-cXi"/>
                     </view>
